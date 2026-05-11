@@ -1,5 +1,23 @@
 const menuButton = document.querySelector(".menu-button");
 const mobileNav = document.querySelector(".mobile-nav");
+const themeToggle = document.querySelector(".theme-toggle");
+const themeToggleText = document.querySelector(".theme-toggle-text");
+
+const storedTheme = localStorage.getItem("molecule-theme");
+const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+const initialTheme = storedTheme || (prefersLight ? "light" : "dark");
+
+const syncThemeControl = (theme) => {
+  const isLight = theme === "light";
+  document.documentElement.dataset.theme = theme;
+  themeToggle?.setAttribute("aria-pressed", String(isLight));
+
+  if (themeToggleText) {
+    themeToggleText.textContent = isLight ? "Dark" : "Light";
+  }
+};
+
+syncThemeControl(initialTheme);
 
 menuButton?.addEventListener("click", () => {
   const isOpen = mobileNav.classList.toggle("is-open");
@@ -11,6 +29,35 @@ document.querySelectorAll(".mobile-nav a").forEach((link) => {
     mobileNav.classList.remove("is-open");
     menuButton?.setAttribute("aria-expanded", "false");
   });
+});
+
+themeToggle?.addEventListener("click", () => {
+  const currentTheme = document.documentElement.dataset.theme || "dark";
+  const nextTheme = currentTheme === "light" ? "dark" : "light";
+  const rect = themeToggle.getBoundingClientRect();
+  const x = rect.left + rect.width / 2;
+  const y = rect.top + rect.height / 2;
+  const wipe = document.createElement("span");
+
+  wipe.className = "theme-wipe";
+  wipe.style.setProperty("--wipe-x", `${x}px`);
+  wipe.style.setProperty("--wipe-y", `${y}px`);
+  wipe.style.background = nextTheme === "light" ? "#f7f4ec" : "#070807";
+  document.body.appendChild(wipe);
+
+  requestAnimationFrame(() => {
+    wipe.classList.add("is-spreading");
+  });
+
+  window.setTimeout(() => {
+    syncThemeControl(nextTheme);
+    localStorage.setItem("molecule-theme", nextTheme);
+    wipe.classList.add("is-fading");
+  }, 360);
+
+  window.setTimeout(() => {
+    wipe.remove();
+  }, 760);
 });
 
 const counters = document.querySelectorAll("[data-count]");
