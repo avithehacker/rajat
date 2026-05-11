@@ -652,6 +652,161 @@ p {
   margin-top: 0;
 }
 
+.course-hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 92px);
+  overflow: hidden;
+  padding: 86px 0;
+}
+
+.course-hero-bg {
+  position: absolute;
+  inset: 34px 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 86px),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 86px),
+    #111310;
+}
+
+.course-hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(7, 8, 7, 0.18), rgba(7, 8, 7, 0.88) 68%);
+}
+
+.course-hero-bg img {
+  position: absolute;
+  width: 58%;
+  min-width: 440px;
+  opacity: 0.24;
+}
+
+.course-hero-bg img:nth-child(1) {
+  top: -8%;
+  left: -12%;
+}
+
+.course-hero-bg img:nth-child(2) {
+  right: -10%;
+  bottom: -10%;
+}
+
+.course-hero-bg img:nth-child(3) {
+  left: 28%;
+  top: 20%;
+  opacity: 0.16;
+}
+
+.course-hero-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 880px;
+  text-align: center;
+}
+
+.course-hero-copy h1 {
+  font-size: clamp(64px, 10vw, 132px);
+}
+
+.course-hero-copy p {
+  max-width: 680px;
+  margin: 24px auto 30px;
+  font-size: 19px;
+}
+
+.curriculum,
+.plans {
+  padding: 70px 0;
+}
+
+.week-list {
+  display: grid;
+  gap: 16px;
+}
+
+.week-card,
+.plan-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.week-card {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 0.85fr) minmax(0, 1fr);
+  gap: 24px;
+  padding: 28px;
+  align-items: start;
+}
+
+.week-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  border: 1px solid rgba(216, 255, 62, 0.36);
+  border-radius: 999px;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.week-card h3 {
+  font-size: clamp(28px, 3vw, 42px);
+  font-family: "Darker Grotesque", sans-serif;
+  line-height: 0.95;
+}
+
+.week-card p {
+  margin: 0;
+}
+
+.week-card ul,
+.plan-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.plan-card {
+  padding: 30px;
+}
+
+.plan-card.featured {
+  border-color: rgba(216, 255, 62, 0.5);
+  box-shadow: 0 0 0 1px rgba(216, 255, 62, 0.08), 0 30px 90px rgba(216, 255, 62, 0.08);
+}
+
+.plan-card h3 {
+  font-size: clamp(38px, 5vw, 64px);
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.plan-card > strong {
+  display: block;
+  margin: 18px 0 22px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 62px;
+  line-height: 0.9;
+}
+
+.plan-card h4 {
+  margin: 30px 0 14px;
+  font-size: 16px;
+}
+
 @media (max-width: 880px) {
   .site-header {
     border-radius: 8px;
@@ -683,6 +838,11 @@ p {
   .bio,
   .about-content article,
   .site-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .week-card,
+  .plan-grid {
     grid-template-columns: 1fr;
   }
 
@@ -784,5 +944,17 @@ p {
 
   .about-content article {
     padding: 24px;
+  }
+
+  .course-hero {
+    min-height: auto;
+  }
+
+  .course-hero-bg img {
+    min-width: 320px;
+  }
+
+  .plan-card > strong {
+    font-size: 50px;
   }
 }
