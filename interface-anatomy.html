@@ -3,29 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Interface Anatomy Cohort 2 | Molecule</title>
-    <meta name="description" content="Interface Anatomy is a live cohort-based course for designers who want to build design systems.">
+    <title>Interface Anatomy — Cohort 2 | Molecule</title>
+    <meta name="description" content="Interface Anatomy is a live cohort-based course. 5 weeks, 12+ sessions. Build a complete design system in Figma. Led by Rajat Patel. Base ₹20,000 · Pro ₹25,000.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+
+    <!-- HEADER -->
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Molecule home">
-        <img src="assets/images/logo.png" alt="">
-        <span>Molecule</span>
-      </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a class="active" href="interface-anatomy.html">Courses</a>
-      </nav>
-      <div class="header-actions">
-        <button class="theme-toggle" type="button" aria-label="Switch color mode" aria-pressed="false">
-          <span class="theme-toggle-track" aria-hidden="true">
-            <span class="theme-toggle-thumb"></span>
-          </span>
-          <span class="theme-toggle-text">Light</span>
-        </button>
-        <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Molecule home">
+          <img src="assets/images/logo.png" alt="">
+          <span>Molecule</span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a class="active" href="interface-anatomy.html">Courses</a>
+        </nav>
+        <div class="header-actions">
+          <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+        </div>
       </div>
     </header>
 
@@ -36,166 +34,281 @@
     </nav>
 
     <main>
-      <section class="course-hero section">
-        <div class="course-hero-bg" aria-hidden="true">
-          <img src="assets/images/course-bg-1.svg" alt="">
-          <img src="assets/images/course-bg-2.svg" alt="">
-          <img src="assets/images/course-bg-3.svg" alt="">
-        </div>
-        <div class="course-hero-copy">
-          <p class="eyebrow">Interface Anatomy Cohort 2</p>
-          <h1>Learn Design and Build Systems In 5 Weeks</h1>
-          <p>Interface Anatomy is a live, cohort-based course for designers who want to go beyond pretty screens and build the systems behind them.</p>
-          <a class="primary-action" href="https://forms.gle" rel="noreferrer">Get the Course</a>
-        </div>
-      </section>
 
-      <section class="curriculum section">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">Course Curriculum</p>
-            <h2>Fuel Your Curiosity Discover the Curriculum</h2>
+      <!-- COURSE HERO — dark / ink background -->
+      <!-- Left: headline + description + CTA -->
+      <!-- Right: spec panel with orbit art (only here, not homepage) -->
+      <section class="course-hero">
+        <div class="course-hero-inner wrap">
+
+          <div class="course-hero-copy">
+            <span class="f-label f-label-orange" style="margin-bottom:28px">Interface Anatomy — Cohort 2</span>
+            <h1>Build a complete design system in 5 weeks.</h1>
+            <p>A live cohort for working designers and career-changers ready to build, document, and ship design systems. Led by Rajat Patel.</p>
+            <a class="primary-action" href="https://forms.gle" rel="noreferrer">Enrol in Cohort 2</a>
           </div>
-          <a class="primary-action" href="https://forms.gle" rel="noreferrer">Get the Course</a>
-        </div>
 
-        <div class="week-list">
-          <article class="week-card">
-            <span>Week 1</span>
-            <h3>Systems First: Orientation, Color & Typography</h3>
-            <p><strong>Focus:</strong> Understanding design systems before jumping into UI creation.</p>
-            <ul>
-              <li>What design systems actually are in real products</li>
-              <li>How this course is structured for practical learning</li>
-              <li>Setting up your Figma workspace for system design</li>
-              <li>Choosing typefaces for systems and understanding hierarchy</li>
-            </ul>
-            <p><strong>Outcome:</strong> You build a strong foundation in design systems and set up your workspace with clarity and structure.</p>
-          </article>
+          <div class="course-hero-art">
+            <!-- Background SVGs — very subtle, blueprint quality -->
+            <img class="bg-svg" src="assets/images/course-bg-1.svg" alt="" aria-hidden="true">
+            <img class="bg-svg" src="assets/images/course-bg-2.svg" alt="" aria-hidden="true">
+            <img class="bg-svg" src="assets/images/course-bg-3.svg" alt="" aria-hidden="true">
+            <!-- Orbit animation: kept on course page only, very subtle -->
+            <div class="orbit-wrap" aria-hidden="true">
+              <div class="orbit orbit-one"></div>
+              <div class="orbit orbit-two"></div>
+              <img class="orbit-mark" src="assets/images/hero-mark.svg" alt="">
+            </div>
+            <div class="course-hero-spec">
+              <div class="hero-spec-row">
+                <span class="hero-spec-key">Duration</span>
+                <span class="hero-spec-val">5 weeks</span>
+              </div>
+              <div class="hero-spec-row">
+                <span class="hero-spec-key">Format</span>
+                <span class="hero-spec-val">Live cohort</span>
+              </div>
+              <div class="hero-spec-row">
+                <span class="hero-spec-key">Sessions</span>
+                <span class="hero-spec-val-lg">12+</span>
+              </div>
+              <div class="hero-spec-row">
+                <span class="hero-spec-key">Base</span>
+                <span class="hero-spec-val-lg">₹20,000</span>
+              </div>
+              <div class="hero-spec-row">
+                <span class="hero-spec-key">Pro</span>
+                <span class="hero-spec-val-lg">₹25,000</span>
+              </div>
+              <div class="hero-spec-row">
+                <span class="hero-spec-key">Seats</span>
+                <span class="hero-spec-val">70 Base · 30 Pro</span>
+              </div>
+            </div>
+          </div>
 
-          <article class="week-card">
-            <span>Week 2</span>
-            <h3>Space, Structure & Figma Fundamentals</h3>
-            <p><strong>Focus:</strong> Building strong foundations in layout, responsiveness and scalable UI systems.</p>
-            <ul>
-              <li>Understanding spacing systems and layout logic</li>
-              <li>Using grid systems for web and mobile design</li>
-              <li>Applying responsive design principles</li>
-              <li>Designing for states and interactions</li>
-            </ul>
-            <p><strong>Outcome:</strong> You gain the ability to create structured, responsive and scalable UI systems.</p>
-          </article>
-
-          <article class="week-card">
-            <span>Week 3</span>
-            <h3>Strategy, Audits & Style Guides</h3>
-            <p><strong>Focus:</strong> Thinking strategically about design systems, audits and documentation.</p>
-            <ul>
-              <li>Understanding atomic design and system thinking</li>
-              <li>What an experience audit is and when to use it</li>
-              <li>Difference between a style guide and a design system</li>
-              <li>Planning your system architecture</li>
-            </ul>
-            <p><strong>Outcome:</strong> You learn to evaluate products critically and document systems that teams can use.</p>
-          </article>
-
-          <article class="week-card">
-            <span>Week 4</span>
-            <h3>Tokens, Governance & System Maturity</h3>
-            <p><strong>Focus:</strong> Scaling, maintaining and operationalizing design systems.</p>
-            <ul>
-              <li>What design tokens are and why they matter</li>
-              <li>Understanding primitive, semantic and component tokens</li>
-              <li>Handling developer handoff inside Figma</li>
-              <li>Design systems adoption strategies</li>
-            </ul>
-            <p><strong>Outcome:</strong> You learn how to make systems usable, sustainable and impactful inside real teams.</p>
-          </article>
-
-          <article class="week-card">
-            <span>Week 5</span>
-            <h3>AI, Career & Business</h3>
-            <p><strong>Focus:</strong> Leveraging AI, building career narratives, and understanding business as a designer.</p>
-            <ul>
-              <li>AI assisted workflows for design systems</li>
-              <li>Using AI tools for documentation and tokens</li>
-              <li>Writing effective prompts and evaluating outputs</li>
-              <li>Positioning your portfolio for design system roles</li>
-            </ul>
-            <p><strong>Outcome:</strong> You learn how to use AI effectively and think strategically about your growth.</p>
-          </article>
         </div>
       </section>
 
-      <section class="plans section">
-        <div class="section-heading">
-          <p class="eyebrow">Plan</p>
-          <h2>Unlock the Experience That Suits You</h2>
+      <!-- DELIVERABLES -->
+      <!-- Outcome BEFORE process. What you will have after 5 weeks. -->
+      <section class="wrap">
+        <div class="deliverables-head" data-reveal>
+          <span class="sec-index">After 5 Weeks</span>
+          <div>
+            <h2>What you will have</h2>
+            <p>Four things you will have when the cohort ends. Open in Figma, present in a portfolio, explain in an interview.</p>
+          </div>
         </div>
-        <div class="plan-grid">
+        <div class="deliverables-grid" data-stagger>
+          <div class="deliverable-cell">
+            <span class="deliverable-num">01</span>
+            <h3>A complete design system in Figma</h3>
+            <p>Tokens, components, variants, states, and documentation — built from scratch over five weeks.</p>
+          </div>
+          <div class="deliverable-cell">
+            <span class="deliverable-num">02</span>
+            <h3>Portfolio-ready capstone project</h3>
+            <p>A packaged case study showing your design system decisions, rationale, and final output.</p>
+          </div>
+          <div class="deliverable-cell">
+            <span class="deliverable-num">03</span>
+            <h3>Certificate of completion</h3>
+            <p>From Molecule Association of Designers, signed by Rajat Patel.</p>
+          </div>
+          <div class="deliverable-cell">
+            <span class="deliverable-num">04</span>
+            <h3>Community access</h3>
+            <p>Permanent access to India's first Design Systems community — a network of practitioners, not a student group.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CURRICULUM -->
+      <section class="curriculum wrap">
+        <div class="curriculum-head" data-reveal>
+          <div>
+            <span class="f-label f-label-orange" style="margin-bottom:12px">Course Curriculum</span>
+            <h2>Five weeks. What happens each week.</h2>
+          </div>
+          <a class="primary-action" href="https://forms.gle" rel="noreferrer">Enrol Now</a>
+        </div>
+
+        <div class="week-list" data-stagger>
+
+          <article class="week-row">
+            <div class="week-badge-col">
+              <span class="week-badge">Week 1</span>
+            </div>
+            <div class="week-title-col">
+              <h3>Systems First: Orientation, Color &amp; Typography</h3>
+              <p>Understand design systems before building a single component.</p>
+            </div>
+            <div class="week-detail-col">
+              <ul>
+                <li>What design systems actually are in real products</li>
+                <li>How this course is structured for practical learning</li>
+                <li>Setting up your Figma workspace for system design</li>
+                <li>Choosing typefaces for systems and understanding hierarchy</li>
+              </ul>
+              <p><strong>Outcome:</strong> You understand how systems thinking applies to real products and have a Figma workspace ready to build in.</p>
+            </div>
+          </article>
+
+          <article class="week-row">
+            <div class="week-badge-col">
+              <span class="week-badge">Week 2</span>
+            </div>
+            <div class="week-title-col">
+              <h3>Space, Structure &amp; Figma Fundamentals</h3>
+              <p>Build strong foundations in layout, responsiveness, and scalable UI systems.</p>
+            </div>
+            <div class="week-detail-col">
+              <ul>
+                <li>Understanding spacing systems and layout logic</li>
+                <li>Using grid systems for web and mobile design</li>
+                <li>Applying responsive design principles</li>
+                <li>Designing for states and interactions</li>
+              </ul>
+              <p><strong>Outcome:</strong> You can build structured, responsive layouts and apply grid logic across web and mobile breakpoints.</p>
+            </div>
+          </article>
+
+          <article class="week-row">
+            <div class="week-badge-col">
+              <span class="week-badge">Week 3</span>
+            </div>
+            <div class="week-title-col">
+              <h3>Strategy, Audits &amp; Style Guides</h3>
+              <p>Think strategically about design systems, audits, and documentation.</p>
+            </div>
+            <div class="week-detail-col">
+              <ul>
+                <li>Understanding atomic design and system thinking</li>
+                <li>What an experience audit is and when to use it</li>
+                <li>Difference between a style guide and a design system</li>
+                <li>Planning your system architecture</li>
+              </ul>
+              <p><strong>Outcome:</strong> You learn to evaluate products critically and document systems that teams can use.</p>
+            </div>
+          </article>
+
+          <article class="week-row">
+            <div class="week-badge-col">
+              <span class="week-badge">Week 4</span>
+            </div>
+            <div class="week-title-col">
+              <h3>Tokens, Governance &amp; System Maturity</h3>
+              <p>Scale, maintain, and operationalize design systems.</p>
+            </div>
+            <div class="week-detail-col">
+              <ul>
+                <li>What design tokens are and why they matter</li>
+                <li>Understanding primitive, semantic, and component tokens</li>
+                <li>Handling developer handoff inside Figma</li>
+                <li>Design systems adoption strategies</li>
+              </ul>
+              <p><strong>Outcome:</strong> You can hand off your design system to developers, write governance documentation, and plan for team adoption.</p>
+            </div>
+          </article>
+
+          <article class="week-row">
+            <div class="week-badge-col">
+              <span class="week-badge">Week 5</span>
+            </div>
+            <div class="week-title-col">
+              <h3>AI, Career &amp; Business</h3>
+              <p>Leverage AI, build career narratives, and understand your value as a systems designer.</p>
+            </div>
+            <div class="week-detail-col">
+              <ul>
+                <li>AI-assisted workflows for design systems</li>
+                <li>Using AI tools for documentation and tokens</li>
+                <li>Writing effective prompts and evaluating outputs</li>
+                <li>Positioning your portfolio for design system roles</li>
+              </ul>
+              <p><strong>Outcome:</strong> You leave with a portfolio-ready design system and a clear positioning strategy for design system roles.</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <!-- Two plans. Featured card is dark/ink. -->
+      <section class="plans wrap" id="plans">
+        <div class="plans-head" data-reveal>
+          <span class="f-label f-label-orange" style="margin-bottom:12px">Pricing</span>
+          <h2>Two plans. One curriculum.</h2>
+        </div>
+        <div class="plan-grid" data-stagger>
+
           <article class="plan-card">
-            <p class="eyebrow">Only 70 Seats</p>
-            <h3>Anatomy Base</h3>
-            <p>Entry level access with essential perks included.</p>
-            <strong>Rs. 20,000</strong>
-            <a class="primary-action" href="https://forms.gle" rel="noreferrer">Get Base Plan</a>
-            <h4>What's included</h4>
+            <span class="f-label">70 Seats Only</span>
+            <h3 class="plan-name">Anatomy Base</h3>
+            <p class="plan-desc">Full curriculum. All sessions. Everything you need to complete the course and walk away with a working design system.</p>
+            <span class="plan-price">₹20,000</span>
+            <a class="primary-action" href="https://forms.gle" rel="noreferrer">Enrol — Base Plan</a>
+            <p class="plan-include">What's included</p>
             <ul>
-              <li>12 live sessions cohort with Rajat Patel</li>
-              <li>Full curriculum: interface building plus design systems from scratch</li>
-              <li>Weekly assignments and checkpoints</li>
-              <li>Component library build with tokens, components, states, scalability</li>
+              <li>12 live sessions with Rajat Patel</li>
+              <li>Full curriculum: interface building and design systems from scratch</li>
+              <li>Weekly assignments and structured checkpoints</li>
+              <li>Component library build — tokens, components, states, scalability</li>
               <li>Design system strategy, architecture, atomic design, planning</li>
-              <li>Community access, certificate, recordings and resources</li>
+              <li>Community access, certificate, recordings, and resources</li>
             </ul>
           </article>
 
           <article class="plan-card featured">
-            <p class="eyebrow">Only 30 Seats</p>
-            <h3>Anatomy Pro</h3>
-            <p>Top-tier treatment with deeper feedback and exclusive benefits.</p>
-            <strong>Rs. 25,000</strong>
-            <a class="primary-action" href="https://forms.gle" rel="noreferrer">Get Pro Plan</a>
-            <h4>What's included</h4>
+            <span class="f-label">Recommended · 30 Seats</span>
+            <h3 class="plan-name">Anatomy Pro</h3>
+            <p class="plan-desc">Smaller cohort. More feedback. An extended track so your capstone is portfolio-ready, not just complete.</p>
+            <span class="plan-price">₹25,000</span>
+            <a class="primary-action" href="https://forms.gle" rel="noreferrer">Enrol — Pro Plan</a>
+            <p class="plan-include">What's included</p>
             <ul>
               <li>Everything in Anatomy Base</li>
-              <li>15 day extended track for deeper build and polish</li>
+              <li>15-day extended track for deeper build and polish</li>
               <li>Smaller cohort, higher feedback frequency</li>
-              <li>Portfolio ready capstone packaging and final presentation</li>
-              <li>AI workflows for documentation, tokens and evaluation</li>
+              <li>Portfolio-ready capstone packaging and final presentation</li>
+              <li>AI workflows for documentation, tokens, and evaluation</li>
               <li>Private Pro community group and priority review lane</li>
             </ul>
           </article>
+
         </div>
       </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer class="site-footer">
-      <div>
-        <a class="brand footer-brand" href="index.html">
-          <img src="assets/images/logo.png" alt="">
-          <span>Molecule Association of Designers</span>
-        </a>
-        <p>By Rajat Patel</p>
-      </div>
-      <div>
-        <h2>Explore</h2>
-        <a href="about.html">About Me</a>
-        <a href="interface-anatomy.html">My Courses</a>
-      </div>
-      <div>
-        <h2>Newsletter</h2>
-        <p>Soon</p>
-      </div>
-      <div>
-        <h2>Show Support!</h2>
-        <a href="https://www.instagram.com" rel="noreferrer">Instagram</a>
-        <a href="https://www.youtube.com" rel="noreferrer">Youtube</a>
-      </div>
-      <div class="footer-bottom">
-        <a href="#">Terms &amp; Conditions</a>
-        <a href="#">Privacy Policy</a>
-        <span>© 2026 Molecule Association of Designers. All rights reserved.</span>
+      <div class="wrap">
+        <div class="footer-inner">
+          <div class="footer-col">
+            <a class="brand footer-brand" href="index.html">
+              <img src="assets/images/logo.png" alt="">
+              <span>Molecule</span>
+            </a>
+            <p>India's first 360° design ecosystem. Founded by Rajat Patel.</p>
+          </div>
+          <div class="footer-col">
+            <h2>Explore</h2>
+            <a href="about.html">About Rajat</a>
+            <a href="interface-anatomy.html">Interface Anatomy</a>
+          </div>
+          <div class="footer-col">
+            <h2>Follow</h2>
+            <a href="https://www.instagram.com" rel="noreferrer">Instagram</a>
+            <a href="https://www.youtube.com" rel="noreferrer">YouTube</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <span>© 2026 Molecule Association of Designers. All rights reserved.</span>
+        </div>
       </div>
     </footer>
 

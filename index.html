@@ -4,28 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Molecule Association of Designers</title>
-    <meta name="description" content="India's only Product Design Association">
+    <meta name="description" content="Design education built on real practice. Live cohorts, systems-first curriculum, led by Rajat Patel — 13 years of product design experience.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+
+    <!-- HEADER -->
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Molecule home">
-        <img src="assets/images/logo.png" alt="">
-        <span>Molecule</span>
-      </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="interface-anatomy.html">Courses</a>
-      </nav>
-      <div class="header-actions">
-        <button class="theme-toggle" type="button" aria-label="Switch color mode" aria-pressed="false">
-          <span class="theme-toggle-track" aria-hidden="true">
-            <span class="theme-toggle-thumb"></span>
-          </span>
-          <span class="theme-toggle-text">Light</span>
-        </button>
-        <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Molecule home">
+          <img src="assets/images/logo.png" alt="">
+          <span>Molecule</span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="active" href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="interface-anatomy.html">Courses</a>
+        </nav>
+        <div class="header-actions">
+          <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+        </div>
       </div>
     </header>
 
@@ -35,183 +33,177 @@
       <a href="interface-anatomy.html">Courses</a>
     </nav>
 
-    <main id="home">
-      <section class="hero section">
+    <main>
+
+      <!-- HERO -->
+      <!-- Headline states what this IS and what it DOES. No avoidance language. -->
+      <section class="hero wrap">
+
         <div class="hero-copy">
-          <p class="eyebrow">Molecule Association of Designers</p>
-          <h1>Save months of trial and error through structured design mentorship with Rajat Patel</h1>
-          <p class="hero-lede">World's 1st 360 degree design ecosystem. Here you get design knowledge, practice, friendship and work all under 1 roof.</p>
-          <a class="primary-action" href="#courses">See our Courses</a>
-        </div>
-        <div class="hero-art" aria-label="Design ecosystem preview">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <img class="hero-mark" src="assets/images/hero-mark.svg" alt="">
-          <div class="floating-card card-a">
-            <span>UI Design</span>
-            <strong>Layout systems</strong>
+          <div class="hero-label">
+            <span class="hero-label-line" aria-hidden="true"></span>
+            <span class="hero-label-text">Molecule Association of Designers</span>
           </div>
-          <div class="floating-card card-b">
-            <span>Mentorship</span>
-            <strong>Live cohorts</strong>
+          <h1>Design education built on real practice.</h1>
+          <p class="hero-lede">Five weeks. Twelve live sessions with Rajat Patel. You build a complete design system in Figma — tokens, components, states, documentation — the way real product teams do it.</p>
+          <a class="primary-action" href="interface-anatomy.html">See the Course</a>
+        </div>
+
+        <div class="hero-art">
+          <div class="hero-portrait">
+            <img src="assets/images/rajat.png" alt="Rajat Patel — Molecule founder and design educator">
           </div>
-          <div class="floating-card card-c">
-            <span>Output</span>
-            <strong>Portfolio ready</strong>
+          <div class="hero-portrait-plate">
+            <div>
+              <span class="hero-portrait-name">Rajat Patel</span>
+              <span class="hero-portrait-role">Design Educator &amp; Founder</span>
+            </div>
+            <span class="f-label f-label-orange">13 Years of Real Practice</span>
           </div>
         </div>
+
       </section>
 
-      <section class="skills-strip" aria-label="Design disciplines">
-        <div class="marquee">
-          <span>UI Design</span>
-          <span>UX Design</span>
-          <span>Information Architecture</span>
-          <span>Design Systems</span>
-          <span>Design Navigations</span>
-          <span>Visual Interaction</span>
-          <span>Product Design</span>
-          <span>Design Consulting</span>
+      <!-- STATS -->
+      <!-- Specific numbers. "2000+ Designers Taught" beats "24 Recognitions". -->
+      <div class="stats-row wrap" data-stagger>
+        <div class="stat-cell">
+          <span class="stat-num" data-count="13">0</span>
+          <span class="stat-label">Years of Practice</span>
         </div>
-      </section>
-
-      <section class="stats section" aria-label="Molecule statistics">
-        <article>
-          <strong data-count="13">0</strong>
-          <span>Work Experience</span>
-        </article>
-        <article>
-          <strong data-count="500">0</strong>
-          <span>Students Mentored</span>
-        </article>
-        <article>
-          <strong data-count="1200">0</strong>
-          <span>Sessions taken</span>
-        </article>
-        <article>
-          <strong data-count="24">0</strong>
-          <span>Recognition Received</span>
-        </article>
-      </section>
-
-      <section class="growth section" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">Built for serious designers</p>
-          <h2>See How Molecule Helps Designers Grow</h2>
+        <div class="stat-cell">
+          <span class="stat-num" data-count="500">0</span>
+          <span class="stat-label">Cohort Students</span>
         </div>
-        <div class="growth-grid">
-          <article>
-            <img src="assets/images/icon-live.svg" alt="">
-            <h3>Live Cohorts</h3>
-            <p>Structured, live learning led by senior practitioners. Build real skills through weekly sessions, assignments, and feedback.</p>
-          </article>
-          <article>
-            <img src="assets/images/icon-systems.svg" alt="">
-            <h3>Systems First</h3>
-            <p>Go beyond pretty screens. Learn interface building and design systems from scratch with practical workflows and clear standards.</p>
-          </article>
-          <article>
-            <img src="assets/images/icon-career.svg" alt="">
-            <h3>Career Proof Output</h3>
-            <p>Ship portfolio ready work with documentation and decision making that reflect how real product teams operate.</p>
-          </article>
+        <div class="stat-cell">
+          <span class="stat-num" data-count="1200">0</span>
+          <span class="stat-label">Teaching Sessions</span>
         </div>
-      </section>
+        <div class="stat-cell">
+          <span class="stat-num" data-count="2000">0</span>
+          <span class="stat-label">Designers Taught</span>
+        </div>
+      </div>
 
-      <section class="build section">
-        <div class="section-heading split">
+      <!-- SECTION 01 — What Molecule gives you -->
+      <!-- Plain language. Knowledge / Practice / Community maps to the 360° claim. -->
+      <section class="wrap" id="pillars">
+        <div class="sec-heading" data-reveal>
+          <span class="sec-index">01 — What You Get</span>
           <div>
-            <p class="eyebrow">Project based learning</p>
-            <h2>What You Will Build at Molecule</h2>
+            <h2>What Molecule gives you</h2>
+            <p>Three things that reinforce each other. Knowledge from live sessions. Practice through weekly builds. Community that stays useful after the cohort ends.</p>
           </div>
-          <p>Live, structured learning that turns designers into systems thinkers. Build interfaces, components, and documentation the way real product teams do.</p>
         </div>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-visual visual-one"></div>
-            <a href="#courses">View Projects</a>
-            <h3>Interface Foundations</h3>
-            <p>Build strong layout, typography, spacing, and hierarchy so your UI looks intentional across every screen.</p>
-          </article>
-          <article class="project-card">
-            <div class="project-visual visual-two"></div>
-            <a href="#courses">View Projects</a>
-            <h3>Design Systems</h3>
-            <p>Create tokens, components, variants, and states with rules that scale, not one off screens.</p>
-          </article>
-          <article class="project-card">
-            <div class="project-visual visual-three"></div>
-            <a href="#courses">View Projects</a>
-            <h3>Component Craft</h3>
-            <p>Learn how to design components like APIs so engineers and teams can use them without confusion.</p>
-          </article>
-          <article class="project-card">
-            <div class="project-visual visual-four"></div>
-            <a href="#courses">View Projects</a>
-            <h3>Patterns and Flows</h3>
-            <p>Design real product patterns like forms, search, filters, empty states, and errors that survive edge cases.</p>
-          </article>
-          <article class="project-card">
-            <div class="project-visual visual-five"></div>
-            <a href="#courses">View Projects</a>
-            <h3>Documentation and Handoff</h3>
-            <p>Write system docs, usage rules, and specs that make implementation faster and reduce back and forth.</p>
-          </article>
-          <article class="project-card">
-            <div class="project-visual visual-six"></div>
-            <a href="#courses">View Projects</a>
-            <h3>Reviews and Quality Bar</h3>
-            <p>Get feedback that raises your bar for consistency, decision making, and system level clarity.</p>
-          </article>
+        <div class="growth-grid" data-stagger>
+          <div class="growth-card">
+            <span class="growth-card-num">01</span>
+            <img class="growth-icon" src="assets/images/icon-live.svg" alt="" loading="lazy">
+            <h3>Knowledge</h3>
+            <p>Live sessions with Rajat — you ask questions, get context, and understand why design decisions are made, not just what they look like. Twelve sessions over five weeks.</p>
+          </div>
+          <div class="growth-card">
+            <span class="growth-card-num">02</span>
+            <img class="growth-icon" src="assets/images/icon-systems.svg" alt="" loading="lazy">
+            <h3>Practice</h3>
+            <p>Weekly assignments, design reviews, and a capstone project. You build a component library and design system from scratch — work you can ship and defend in an interview.</p>
+          </div>
+          <div class="growth-card">
+            <span class="growth-card-num">03</span>
+            <img class="growth-icon" src="assets/images/icon-career.svg" alt="" loading="lazy">
+            <h3>Community</h3>
+            <p>Access to India's first Design Systems community — a network of practitioners, not just students. The connections you build here extend well beyond five weeks.</p>
+          </div>
         </div>
       </section>
 
-      <section class="courses section" id="courses">
-        <div class="section-heading">
-          <p class="eyebrow">Courses</p>
-          <h2>Stop collecting UI tips. Start building a system you can ship and defend.</h2>
+      <!-- SECTION 02 — Course feature + price teaser -->
+      <!-- Pricing surfaced here. Reduces friction. -->
+      <section class="wrap" id="courses">
+        <div class="sec-heading" data-reveal>
+          <span class="sec-index">02 — Course</span>
+          <div>
+            <h2>Interface Anatomy — Cohort 2</h2>
+            <p>Systems thinking and interface craft taught together — the way they exist inside real product teams.</p>
+          </div>
         </div>
-        <article class="course-card">
-          <div class="course-image">
-            <img src="assets/images/course-preview.png" alt="Interface foundations course preview">
+        <div class="course-feature" data-reveal>
+          <div class="course-img-wrap">
+            <img src="assets/images/course-preview.png" alt="Interface Anatomy course preview" loading="lazy">
           </div>
-          <div class="course-copy">
-            <p class="eyebrow">Molecule Cohort</p>
-            <h3>Interface Foundations</h3>
-            <p>Build strong layout, typography, spacing, and hierarchy so your UI looks intentional across every screen.</p>
-          <a class="primary-action" href="interface-anatomy.html">View this course</a>
+          <div class="course-spec">
+            <div class="spec-row">
+              <span class="spec-key">Type</span>
+              <span class="spec-val">Molecule Cohort</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Course</span>
+              <span class="spec-val-large">Interface<br>Anatomy</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Description</span>
+              <span class="spec-val">A five-week live cohort that takes you from zero to a shipped, documented design system in Figma.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Format</span>
+              <span class="spec-val">Live cohort — 5 weeks — 12+ sessions</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Instructor</span>
+              <span class="spec-val">Rajat Patel</span>
+            </div>
+            <a class="primary-action" href="interface-anatomy.html">See Full Curriculum</a>
           </div>
-        </article>
+        </div>
+
+        <!-- PRICE TEASE — surface pricing on homepage to reduce friction -->
+        <div class="price-tease" data-reveal>
+          <div class="price-tease-cell">
+            <span class="price-tease-label">Base Plan</span>
+            <span class="price-tease-amount">₹20,000</span>
+            <span class="price-tease-note">70 seats · Full curriculum</span>
+          </div>
+          <div class="price-tease-cell">
+            <span class="price-tease-label">Pro Plan</span>
+            <span class="price-tease-amount">₹25,000</span>
+            <span class="price-tease-note">30 seats · Extended track + priority review</span>
+          </div>
+          <div class="price-tease-cta">
+            <a class="primary-action" href="interface-anatomy.html#plans">Enrol Now</a>
+          </div>
+        </div>
+
       </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer class="site-footer">
-      <div>
-        <a class="brand footer-brand" href="#home">
-          <img src="assets/images/logo.png" alt="">
-          <span>Molecule Association of Designers</span>
-        </a>
-        <p>By Rajat Patel</p>
-      </div>
-      <div>
-        <h2>Explore</h2>
-        <a href="about.html">About Me</a>
-        <a href="interface-anatomy.html">My Courses</a>
-      </div>
-      <div>
-        <h2>Newsletter</h2>
-        <p>Soon</p>
-      </div>
-      <div>
-        <h2>Show Support!</h2>
-        <a href="https://www.instagram.com" rel="noreferrer">Instagram</a>
-        <a href="https://www.youtube.com" rel="noreferrer">Youtube</a>
-      </div>
-      <div class="footer-bottom">
-        <a href="#">Terms &amp; Conditions</a>
-        <a href="#">Privacy Policy</a>
-        <span>© 2026 Molecule Association of Designers. All rights reserved.</span>
+      <div class="wrap">
+        <div class="footer-inner">
+          <div class="footer-col">
+            <a class="brand footer-brand" href="index.html">
+              <img src="assets/images/logo.png" alt="">
+              <span>Molecule</span>
+            </a>
+            <p>India's first 360° design ecosystem. Founded by Rajat Patel.</p>
+          </div>
+          <div class="footer-col">
+            <h2>Explore</h2>
+            <a href="about.html">About Rajat</a>
+            <a href="interface-anatomy.html">Interface Anatomy</a>
+          </div>
+          <div class="footer-col">
+            <h2>Follow</h2>
+            <a href="https://www.instagram.com" rel="noreferrer">Instagram</a>
+            <a href="https://www.youtube.com" rel="noreferrer">YouTube</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <span>© 2026 Molecule Association of Designers. All rights reserved.</span>
+        </div>
       </div>
     </footer>
 
